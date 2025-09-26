@@ -28,16 +28,16 @@ Leave the page open in a browser tab. In the next step you will copy values from
 
 1. In a new browser tab, open [github.com](https://github.com/) and log in as whichever account you want HCP Terraform to act as. For most organizations this should be a dedicated service user, but a personal account will also work.
 
-> [!IMPORTANT]
-> The account you use for connecting HCP Terraform must have admin access to any shared repositories of Terraform configurations, since creating webhooks requires admin permissions.
+   > [!IMPORTANT]
+   > The account you use for connecting HCP Terraform must have admin access to any shared repositories of Terraform configurations, since creating webhooks requires admin permissions.
 
 2. Navigate to GitHub's [Register a New OAuth Application](https://github.com/settings/applications/new) page.
 
-  This page is located at [https://github.com/settings/applications/new](https://github.com/settings/applications/new). You can also reach it through GitHub's menus:
+   This page is located at [https://github.com/settings/applications/new](https://github.com/settings/applications/new). You can also reach it through GitHub's menus:
 
-  * Click your profile picture and choose "Settings."
-  * Click "Developer settings," then make sure you're on the "OAuth Apps" page (not "GitHub Apps").
-  * Click the "New OAuth App" button.
+   * Click your profile picture and choose "Settings."
+   * Click "Developer settings," then make sure you're on the "OAuth Apps" page (not "GitHub Apps").
+   * Click the "New OAuth App" button.
 
 3. This page has a form with four text fields.
 
@@ -47,7 +47,7 @@ Fill out the text fields as follows:
 
 | Field name | Value |
 | --- | --- |
-| Application Name | HCP Terraform (<YOUR ORGANIZATION NAME>) |
+| Application Name | HCP Terraform `<YOUR ORGANIZATION NAME>` |
 | Homepage URL | `https://app.terraform.io` (or the URL of your Terraform Enterprise instance) |
 | Application Description | Any description of your choice. |
 | Authorization callback URL | `https://app.terraform.io/<YOUR CALLBACK URL>` |
