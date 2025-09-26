@@ -28,16 +28,16 @@ Leave the page open in a browser tab. In the next step you will copy values from
 
 1. In a new browser tab, open [github.com](https://github.com/) and log in as whichever account you want HCP Terraform to act as. For most organizations this should be a dedicated service user, but a personal account will also work.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > The account you use for connecting HCP Terraform must have admin access to any shared repositories of Terraform configurations, since creating webhooks requires admin permissions.
 
 2. Navigate to GitHub's [Register a New OAuth Application](https://github.com/settings/applications/new) page.
 
-   This page is located at https://github.com/settings/applications/new. You can also reach it through GitHub's menus:
+  This page is located at [https://github.com/settings/applications/new](https://github.com/settings/applications/new). You can also reach it through GitHub's menus:
 
-   * Click your profile picture and choose "Settings."
-   * Click "Developer settings," then make sure you're on the "OAuth Apps" page (not "GitHub Apps").
-   * Click the "New OAuth App" button.
+  * Click your profile picture and choose "Settings."
+  * Click "Developer settings," then make sure you're on the "OAuth Apps" page (not "GitHub Apps").
+  * Click the "New OAuth App" button.
 
 3. This page has a form with four text fields.
 
@@ -64,6 +64,8 @@ Fill out the text fields as follows:
 
 2. Click "Connect and continue." This takes you to a page on GitHub.com, asking whether you want to authorize the app.
 
-3. The authorization page lists any GitHub organizations this account belongs to. If there is a Request button next to the organization that owns your Terraform code repositories, click it now. Note that you need to do this even if you are only connecting workspaces or Stacks to private forks of repositories in those organizations since those forks are subject to the organization's access restrictions. See [About OAuth App access restrictions](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions).
+3. The authorization page lists any GitHub organizations this account belongs to. If there is a Request button next to the organization that owns your Terraform code
+repositories, click it now. Note that you need to do this even if you are only connecting workspaces or Stacks to private forks of repositories in those organizations
+since those forks are subject to the organization's access restrictions. See [About OAuth App access restrictions](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions).
 
 4. Click the green "Authorize `<GITHUB USER>`" button at the bottom of the authorization page. GitHub might request your password or multi-factor token to confirm the operation.
